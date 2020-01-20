@@ -1,0 +1,340 @@
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: #292720;
+}
+/* @font-face {
+  font-family: fontTtl;
+  src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap&subset=vietnamese");
+  font-weight: 400;
+} */
+
+/* HEADER CSS */
+header {
+  height: 80px;
+  align-items: center;
+  position: relative;
+  border-bottom: 5px solid #009a9a;
+}
+header img {
+  width: 80px;
+  position: absolute;
+  left: 50%;
+}
+.header__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+  border: none;
+}
+header .header__contact-group i {
+  font-size: 20px;
+  color: white;
+  background-color: #009a9a;
+  padding: 4px;
+  border-radius: 3px;
+  margin: 0 10px;
+}
+/* combo bubble speech */
+.header__bubble {
+  margin: 0;
+  border: 1.5px solid #009a9a;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 200px;
+  position: relative;
+  display: inline;
+}
+.header__bubble:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 35%;
+  left: -7%;
+  border-left: 3px solid transparent;
+  border-right: 8px solid #009a9a;
+  border-top: 3px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.header__bubble:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 38%;
+  left: -5%;
+  border-left: 3px solid transparent;
+  border-right: 8px solid #fff;
+  border-top: 3px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+/* END HEADER CSS */
+
+/* NAVIGATION CSS */
+.navbar ul {
+  align-items: center;
+}
+.navbar ul li {
+  border-right: 1px solid #292720;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.navbar ul li.active a {
+  color: #009a9a !important;
+}
+.carousel .fa-arrow-circle-right,
+.fa-arrow-circle-left {
+  color: rgba(154, 155, 156, 0.4);
+  font-size: 40px;
+  position: absolute;
+  top: 40%;
+}
+/* END NAVIGATION CSS */
+
+/* CAROUSEL CSS */
+.carousel .fa-arrow-circle-right {
+  right: 2%;
+}
+.carousel .fa-arrow-circle-left {
+  left: 2%;
+}
+/* END CAROUSEL CSS */
+
+/* PRODUCT CSS */
+.product {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.product > h4 {
+  position: relative;
+  padding-bottom: 10px;
+}
+.product h4 span {
+  color: #009a9a;
+}
+.product > h4::before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background: darkgrey;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.product .product__item img {
+  width: 100%;
+}
+.product button {
+  background-color: #009a9a;
+  color: white;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* END PRODUCT CSS */
+
+/* ABOUT CSS */
+.about {
+  background-color: #fafafa;
+  padding: 40px 0;
+}
+.section-title {
+  color: #009a9a;
+  text-align: center;
+  position: relative;
+  padding: 10px 0;
+}
+.section-title::before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background: #009a9a;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.about .row {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 380px;
+}
+.about .card .btn-link {
+  color: black;
+  text-decoration: none;
+  font-style: italic;
+}
+.about .card .btn-link:hover,
+.btn-link.active {
+  text-decoration: none;
+}
+.about .card .card-body {
+  color: #746666;
+}
+.about .col-4 img {
+  width: 100%;
+}
+/* END ABOUT CSS */
+
+/* NEWS CSS */
+.news {
+  border-bottom: 0.5px solid lightgrey;
+  position: relative;
+}
+.news .news__navigation {
+  position: absolute;
+  right:0;
+  top: 15%;
+}
+.news .news__navigation .arrow-left {
+  transform: scaleX(-1);
+}
+.news .news__item {
+  box-shadow: 2px 2px 2px 2px lightgrey;
+}
+
+.news__item .card-body i {
+  font-size: 30px;
+  color: #009a9a;
+}
+.news__item .card-body h5 {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  color: #009a9a;
+}
+.news__item .card-text {
+  color: #464646;
+  border-bottom: 0.5px solid lightgrey;
+}
+.news__item .card-text i {
+  color: #464646;
+  font-size: 24px;
+  
+}
+.card-body .btn {
+  /* background-color: #009A9A; */
+  background-image: url(../img/scroll.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+ text-align: left;
+  color: white;
+  outline: none;
+
+}
+.btn > span {
+  color: white;
+  font-size: 28px;
+  display: inline-block;
+  line-height: 0.5;
+  transform: translateY(15%);
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* END NEWS CSS */
+
+/* FOOTER CSS */
+.footer {
+  background-color: #404040;
+  color: #8d8d8d;
+}
+.footer .footer__head {
+  text-align: center;
+font-style: italic;
+}
+.footer .footer__head h2 {
+  font-weight: 700;
+  color: #009a9a;
+}
+.footer .footer__head img {
+  width: 100%;
+  height: 73px;
+  object-fit: none;
+  object-position: 100% 0;
+}
+.content-video {
+  transform: translateX(-25%);
+}
+.footer .footer__body {
+  display: grid;
+  grid-template-columns: repeat(4,1fr); 
+  grid-gap: 20px;
+  -moz-display: grid;
+  -moz-grid-template-columns: repeat(4,1fr); 
+  -moz-grid-gap: 20px;
+  margin: 50px 0;
+  position: relative;
+}
+
+.footer__body p {
+  font-size: 14px;
+}
+.footer__body .footer__title {
+  position: relative;
+}
+.footer__body h4 {
+position: absolute;
+left: 0;
+bottom: 0;
+
+}
+.footer__body h4::before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background: #8d8d8d;
+  display: inline-block;
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+}
+.footer__item-group .footer__item {
+  display: flex;
+  margin: 5px 0;
+}
+.footer__item-group .footer__item img {
+  width: 60px;  
+  height: 60px;
+  object-fit: cover;
+}
+.footer__item-group .footer__item .footer__news-info {
+  margin-left: 10px;
+}
+.footer__item-group .footer__item .footer__news-info p {
+  margin: 0; 
+}
+.footer__item-group .footer__item .footer__news-info span {
+  font-size: 12px;
+}
+.footer__copyright {
+  background-color: #353535;
+}
+.footer__copyright p {
+  margin: 0;
+}
+.footer__copyright span {
+  color: #0da588;
+}
+/* END FOOTER CSS */

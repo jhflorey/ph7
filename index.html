@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>pH7 website</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" type="image/png" href="./img/ph7-logo_5.png" />
+
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700|Source+Sans+Pro:300,400,700&display=swap&subset=vietnamese"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- <div id="fb-root"></div> -->
+    <header class="my-2 pl-5 pr-1">
+      <a href="index.html"><img src="./img/ph7-logo_5.png" alt="Logo pH7"/></a>
+      <div class="header__group">
+        <div class="header__contact-group">
+          <i class="fa fa-home"></i>
+          <i class="fa fa-envelope"></i>
+          <i class="fa fa-phone"></i>
+          <p class="header__bubble">Hotline: 0164 123 789</p>
+        </div>
+
+        <div class="dropdown">
+          <button
+            class="btn btn-outline-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Tiếng Việt
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <!-- END button dropdown -->
+      </div>
+    </header>
+    <!-- END header -->
+    <nav class="navbar my-2 py-0">
+      <ul class="list-inline px-2 m-0">
+        <li class="active list-inline-item pr-3">
+          <a class="text-decoration-none text-dark" href="#">Trang Chủ </a>
+        </li>
+        <li class="list-inline-item pr-3">
+          <a class="text-decoration-none text-dark" href="#">Sản Phẩm </a>
+        </li>
+        <li class="list-inline-item pr-3">
+          <a class="text-decoration-none text-dark" href="#">Blog </a>
+        </li>
+        <li class="list-inline-item pr-3">
+          <a class="text-decoration-none text-dark" href="#">Liên Hệ </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- END NAVIGATION -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./img/slider1.jpg" alt="First slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./img/slider2.jpg" alt="Second slide" />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <i class="fa fa-arrow-circle-left"></i>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <i class="fa fa-arrow-circle-right"></i>
+      </a>
+    </div>
+    <!-- END carousel -->
+
+    <section class="container product my-3 text-center pb-5">
+      <h4>
+        Better preservation, greater presence and more flavour in your products with
+        <span>PHU HUNG 7</span>
+      </h4>
+      <div class=" row product__list mt-2 mb-4">
+        <div class="product__item col-2">
+          <img src="./img/ca.jpg" />
+          <p>Động vật chân đầu</p>
+        </div>
+        <div class="product__item col-2">
+          <img src="./img/ca.jpg" />
+          <p>Động vật giáp xác</p>
+        </div>
+        <div class="product__item col-2">
+          <img src="./img/ca.jpg" />
+          <p>Nhuyễn thể</p>
+        </div>
+        <div class="product__item col-2">
+          <img src="./img/ca.jpg" />
+          <p>Cá</p>
+        </div>
+        <div class="product__item col-2">
+          <img src="./img/ca.jpg" />
+          <p>Gia cầm</p>
+        </div>
+        <div class="product__item col-2">
+          <img src="./img/ca.jpg" />
+          <p>Sản phẩm từ thịt</p>
+        </div>
+      </div>
+      <!-- END row product__list -->
+      <button>Sản Phẩm Của PH7</button>
+    </section>
+    <!-- END product -->
+    <section class="about">
+      <div class="container">
+        <h1 class="section-title">Về chúng tôi</h1>
+        <div class="row">
+          <div class="pr-5 col-8">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Quá trình thành lập
+                    </button>
+                  </h5>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse show"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Đội ngũ kỹ thuật lành nghề của PH7 bao gồm các chuyên gia trong lĩnh vực sinh
+                    học, hóa học, dược phẩm và dinh dưỡng sẽ luôn mang đến những công nghệ mới nhất
+                    hiện nay trong ngành xử lý và chế biến thực phẩm
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Dịch vụ toàn quốc
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                    brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      Chất lượng số
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseFour"
+                  class="collapse"
+                  aria-labelledby="headingFour"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                    brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Ngiên cứu để hướng tới khách hàng
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Nihil anim craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+                    vegan butcher vice lomo. Leggings craft beer farm-to-table, raw denim synth
+                    nesciunt you probably haven't heard of them accusamus labore VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END col-8 -->
+          <div class="pl-4 pr-0 col-4">
+            <img src="./img/ph7-man.jpg" />
+          </div>
+          <!-- END col-4 -->
+        </div>
+      </div>
+      <!-- END container -->
+    </section>
+
+    <section class="news container mb-4 py-5">
+      <h1 class="section-title">Tin tức mới</h1>
+
+      <div class="card-columns">
+        <div class="news__navigation">
+          <a href="#"><img class="arrow-left" src="./img/right1.jpg"></a>
+          <a href="#"><img src="./img/right1.jpg"></a>
+        </div>
+        <div class="card news__item px-0 mr-4 ml-0 border-0 rounded-0">
+          <img
+            class="card-img-top rounded-0 w-100"
+            src="./img/aditivos_para_pescado_opt.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body px-1 py-2">
+            <div class="news__item-title d-flex align-items-center">
+              <i class="fa fa-align-left fa-flip-vertical mr-3"></i>
+              <h5 class="card-title m-0">FOOD ADDITIVES: CHARACTERISTICS AND PURPOSE</h5>
+            </div>
+            <p class="card-text py-4 my-2">
+              <i class="fa fa-calendar-alt mr-2"></i>
+              10/2/2017
+            </p>
+            <a href="#" class="btn rounded-0 d-block my-0">Xem Thêm <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="card news__item px-0 mr-4 ml-0 border-0 rounded-0">
+          <img
+            class="card-img-top rounded-0 w-100"
+            src="./img/img_5629.jpeg"
+            alt="Card image cap"
+          />
+          <div class="card-body px-1 py-2">
+            <div class="news__item-title d-flex align-items-center">
+              <i class="fa fa-align-left fa-flip-vertical mr-3"></i>
+              <h5 class="card-title m-0">FOOD ADDITIVES: CHARACTERISTICS AND PURPOSE</h5>
+            </div>
+            <p class="card-text py-4 my-2">
+              <i class="fa fa-calendar-alt mr-2"></i>
+              10/2/2017
+            </p>
+            <a href="#" class="btn rounded-0 d-block my-0">Xem Thêm <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="card news__item px-0 mr-0 border-0 rounded-0">
+          <img
+            class="card-img-top rounded-0 w-100"
+            src="./img/tuna_burger.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body px-1 py-2">
+            <div class="news__item-title d-flex align-items-center">
+              <i class="fa fa-align-left fa-flip-vertical mr-3"></i>
+              <h5 class="card-title m-0">FOOD ADDITIVES: CHARACTERISTICS AND PURPOSE</h5>
+            </div>
+            <p class="card-text py-4 my-2">
+              <i class="fa fa-calendar-alt mr-2"></i>
+              10/2/2017
+            </p>
+            <a href="#" class="btn rounded-0 d-block my-0">Xem Thêm <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END news -->
+
+    <footer class="footer pt-5">
+      <div class="container">
+        <div class="footer__head">
+          <h2>VIDEO VỀ PHU HUNG 7</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic adipisci nostrum facere
+            voluptates unde voluptatibus fuga molestiae repellendus! Dolor beatae distinctio
+            similique voluptatem? Ea adipisci enim illo, id veritatis magni architecto at assumenda.
+            Magnam recusandae quae quasi debitis quod voluptatibus?
+          </p>
+          <!-- Button trigger modal (Youtube Video) -->
+          <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
+            <img src="./img/btn_play.png" />
+          </button>
+        </div>
+        <!-- END footer__head -->
+
+        <div class="footer__body">
+          <img class="footer-item1" src="./img/logo-footer.png" />
+          <div class="footer__title footer-item2">
+            <h4>
+              Sản Phẩm
+            </h4>
+          </div>
+
+          <div class="footer__title footer-item3">
+            <h4>
+              Tin Tức
+            </h4>
+          </div>
+
+          <div class="footer__title footer-item4">
+            <h4>
+              Liên Hệ
+            </h4>
+          </div>
+          <p class="footer-item5">
+            An innovative team with expertise in the development and manufacture of food additives
+            especially designed for the treatment of fish, crustaceans or meat.
+          </p>
+          <p class="footer-item6">
+            • Moisture retainers and texturisers <br />
+            • Whiteners and preservatives <br />
+            • Antimelanotic agents <br />
+            • Glazing agents and antifoaming agents <br />
+            • Special sea brine <br />
+            • Special meat brine <br />
+            • Binders <br />
+          </p>
+          <div class="footer__item-group footer-item7">
+            <div class="footer__item">
+              <img src="./img/aditivos_para_pescado_opt.jpg" />
+              <div class="footer__news-info">
+                <p>
+                  Food additives: characteristics and purpose
+                </p>
+                <span>20 Feb 017</span>
+              </div>
+            </div>
+
+            <div class="footer__item">
+              <img src="./img/tuna_burger.jpg" />
+              <div class="footer__news-info">
+                <p>
+                  Fish Burgers
+                </p>
+                <span>7 Feb 017</span>
+              </div>
+            </div>
+
+            <div class="footer__item">
+              <img src="./img/img_6507.jpg" />
+              <div class="footer__news-info">
+                <p>
+                  Glass 20, one of our star products 2016
+                </p>
+                <span>20 Feb 017</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__contact-group footer-item8">
+            <p>
+              E-mail: Dangtrunghieu147@gmaiI.com <br />
+              Hotline: 01634643124-01678967804 <br />
+              Địa chỉ: 643, Lê Hồng Phong, Phường 10, Quận 10, TP.HCM
+            </p>
+            <div id="fb-root"></div>
+            <div class="fb-page" data-href="https://www.facebook.com/alphaleapers/" data-tabs="timeline" data-width="350px" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/alphaleapers/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/alphaleapers/">Alpha Leapers Digital</a></blockquote></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright py-5">
+        <div class="container d-flex justify-content-between">
+          <p>© 2017 PH7 Food Technology - Legal notice - Cookie Policy</p>
+          <p>Design by: <span>Re Group</span></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Youtube Video-->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content content-video">
+          <iframe
+            width="861"
+            height="484"
+            src="https://www.youtube.com/embed/1k-1OuEVMFc"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- FACEBOOK SDK -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
